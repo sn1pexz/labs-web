@@ -6,4 +6,4 @@ Each lab is organized in a separate folder with code examples and additional mat
 ---
 
 ## 📂 Project Structure
-- `lab1-html-basics/` – HTML fundamentals, page structure, working with tags  
+- `lab1` – HTML fundamentals, page structure, working with tags  
