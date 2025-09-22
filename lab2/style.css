@@ -80,6 +80,8 @@ header{
     aspect-ratio:4/3;
     overflow:hidden;
     border-radius:14px;
+    box-shadow: var(--shadow);
+    transition: box-shadow .2s;
 }
 
 .card img{
@@ -87,9 +89,9 @@ header{
     height:100%;
     object-fit:cover;
     border-radius:14px;
-    box-shadow:0 6px 14px rgba(0,0,0,.15);
-    transition:transform .2s, box-shadow .2s;
+    transition: transform .2s;
 }
+
 .card img:hover{
     transform:scale(1.04);
     box-shadow:0 10px 20px rgba(0,0,0,.20);
@@ -162,6 +164,17 @@ footer{
     text-align: left;
 }
 
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, minmax(240px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
