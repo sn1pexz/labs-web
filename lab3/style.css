@@ -1,44 +1,123 @@
-
-:root{
-    --bg:#f6f5f4; --card:#ffffff; --text:#111827; --muted:#6b7280; --brand:#b45309; --accent:#f59e0b; --line:#e5e7eb;
-    --radius:14px; --shadow:0 10px 24px rgba(0,0,0,.08);
+:root {
+  --bg: #f6f5f4;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #6b7280;
+  --brand: #b45309;
+  --accent: #f59e0b;
+  --line: #e5e7eb;
+  --radius: 14px;
+  --shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
-body{
-    margin:0;
-    font-family: "Merriweather", serif;
-    font-weight: 400;
-    line-height:1.5;
+body {
+  background-color: #f6f5f4;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
-.card-img-top{
-    width: 100%;
-    aspect-ratio: 4 / 3;   /*стабільна пропорція*/
-    object-fit: cover;      /*обрізати зайве, без спотворень*/
+.card-img-top {
+  width: 100%;
+  aspect-ratio: 4 / 3; /*стабільна пропорція*/
+  object-fit: cover; /*обрізати зайве, без спотворень*/
 }
 
-.about{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:20px
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
-.about .photo{
-    border-radius:14px;
-    overflow:hidden;
-    border:1px solid #e5e7eb
-}
-
-.section{
-    gap: 10px
+.about .photo {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
 }
 
-
-.card .card-body{
-    display: flex;
-    flex-direction: column;
-}
-.card .card-body .btn{
-    margin-top: auto;
+.section {
+  gap: 10px;
 }
 
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+.card .card-body .btn {
+  margin-top: auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 30px;
+  background-color: white;
+}
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 5px;
+}
+
+nav {
+  display: flex;
+  gap: 10px;
+}
+nav > a {
+  color: black;
+}
+a:hover {
+  color: rgb(99, 96, 96);
+}
+a {
+  text-decoration: none;
+}
+
+#slider .carousel-inner img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 10%;
+}
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: center;
+}
+section {
+  margin: 20px;
+}
+.photo img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20%;
+}
+.about .photo {
+  border: none;
+}
+.icon {
+  width: 25px;
+}
+.phone {
+  width: 20px;
+}
+.email {
+  width: 20px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
