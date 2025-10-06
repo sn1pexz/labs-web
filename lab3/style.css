@@ -1,15 +1,3 @@
-:root {
-  --bg: #f6f5f4;
-  --card: #ffffff;
-  --text: #111827;
-  --muted: #6b7280;
-  --brand: #b45309;
-  --accent: #f59e0b;
-  --line: #e5e7eb;
-  --radius: 14px;
-  --shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
-}
-
 body {
   background-color: #f6f5f4;
   margin: 0;
@@ -76,7 +64,9 @@ a:hover {
 a {
   text-decoration: none;
 }
-
+.faq {
+  font-size: 1.3rem;
+}
 #slider .carousel-inner {
   width: 300px;
   margin: 0 auto;
