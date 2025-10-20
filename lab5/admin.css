@@ -13,6 +13,12 @@ body {
   justify-content: center;
 }
 
+.admin-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .admin-header .brand {
   display: flex;
   align-items: center;
