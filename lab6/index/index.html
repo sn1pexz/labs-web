@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="реалізація кав'ярні" />
+    <meta name="keywords" content="Лабораторна робота, лаба, HTML, завдання" />
+    <meta name="author" content="student" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кав'ярня</title>
+
+    <!--boostrap-->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <div class="brand">
+          <img class="logo" src="../icons/logo.svg" alt="logo" srcset="" />
+          Кав'ярня
+        </div>
+        <nav>
+          <a href="#menu">Меню</a>
+          <a href="#news">Новини</a>
+          <a href="#about">Про нас</a>
+          <a href="#contacts">Контакти</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section hero" aria-label="Головний блок">
+          <div class="hero-card">
+            <h1>Свіжа кава щодня</h1>
+            <p>
+              Меню, бронювання столиків, доставка у ваш район. Працюємо з 8:00
+              до 22:00.
+            </p>
+            <div class="general-btn">
+              <a
+                class="btn secondary animate__animated animate__pulse animate__infinite"
+                href="#menu"
+              >
+                Переглянути меню</a
+              >
+              <a class="btn" href="../auth/auth.html"> Забронювати стіл</a>
+            </div>
+          </div>
+
+          <div
+            id="slider"
+            class="carousel slide"
+            data-bs-ride="carousel"
+            data-bs-interval="1000"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop"
+                  alt="Еспресо та круасан"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop"
+                  alt="Лате-арт у чашці"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop"
+                  alt="Інтер'єр кав'ярні"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="menu" class="section">
+          <div class="container">
+            <h2 id="menu-title" class="mb-4">Популярне у нас</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1695740642763-86eaa3b1057d?q=80&w=1076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    alt="Еспресо"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Еспресо</h5>
+                    <p class="card-text">
+                      Насичений смак та міцність. Подається у порції 60 мл.
+                    </p>
+                    <a href="#" class="btn btn-primary">Замовити</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=800&auto=format&fit=crop"
+                    class="card-img-top"
+                    alt="Американо"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Американо</h5>
+                    <p class="card-text">
+                      Еспресо, розбавлений гарячою водою для м’якого смаку.
+                    </p>
+                    <a href="#" class="btn btn-primary">Замовити</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=800&auto=format&fit=crop"
+                    class="card-img-top"
+                    alt="Капучино"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Капучино</h5>
+                    <p class="card-text">
+                      Ідеальний баланс еспресо, молока та пишної молочної піни.
+                    </p>
+                    <a href="#" class="btn btn-primary">Замовити</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1570968915860-54d5c301fa9f?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    alt="Лате"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Лате</h5>
+                    <p class="card-text">
+                      Ніжний кавовий напій з великою кількістю молока.
+                    </p>
+                    <a href="#" class="btn btn-primary">Замовити</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1674406481284-43eba097a291?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    alt="Чай"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Чай</h5>
+                    <p class="card-text">
+                      Ароматний чорний, зелений чи трав’яний чай на ваш вибір.
+                    </p>
+                    <a href="#" class="btn btn-primary">Замовити</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1623334044303-241021148842?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    class="card-img-top"
+                    alt="Круасани"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Круасани</h5>
+                    <p class="card-text">
+                      Свіжоспечені круасани: класичні, мигдальні та шоколадні.
+                    </p>
+                    <a href="#" class="btn btn-primary">Замовити</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="news" class="section" aria-labelledby="news-title">
+          <div class="container">
+            <h2 id="news-title" class="mb-4">Новини</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Новинка: Флет-вайт</h5>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Proin a massa in nibh.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Сезонні десерти</h5>
+                    <p class="card-text">
+                      Morbi imperdiet, sem vitae dapibus porta, quam risus
+                      ultricies quam, sit amet fermentum.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Знижка -10% з 8:00 до 10:00</h5>
+                    <p class="card-text">
+                      Integer at purus ac sapien venenatis venenatis. Mauris
+                      quis lorem nibh.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Живий джаз у п'ятницю</h5>
+                    <p class="card-text">
+                      Aliquam sagittis, velit vel varius accumsan, tellus quam
+                      pulvinar justo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Доставка районом</h5>
+                    <p class="card-text">
+                      Nullam a augue et nisl aliquet consequat non sit amet
+                      lacus.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <h5 class="card-title">Відкрито терасу</h5>
+                    <p class="card-text">
+                      Praesent dignissim, ligula vel cursus faucibus, risus odio
+                      posuere augue.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="section about" aria-labelledby="about-title">
+          <div class="photo">
+            <img
+              src="https://images.unsplash.com/photo-1541167760496-1628856ab772?q=80&w=1200&auto=format&fit=crop"
+              alt="Бариста готує каву"
+            />
+          </div>
+          <div class="card about-cafe">
+            <h2 id="about-title" style="margin-top: 0">Про кав'ярню</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
+              natus. Наша місія — якісна кава та дружня атмосфера.
+            </p>
+            <ul>
+              <li>Бронювання столиків онлайн</li>
+              <li>Доставка напоїв і десертів</li>
+              <li>Обсмажка власної кави</li>
+              <li><a href="../faq/faq.html" class="faq">FAQ</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section
+          id="contacts"
+          class="section map-contacts"
+          aria-labelledby="contacts-title"
+        >
+          <div class="card contacts">
+            <h2 id="contacts-title" style="margin-top: 0">Контакти</h2>
+            <p><strong>Адреса:</strong> вул. Практична, 10</p>
+            <p><strong>Години:</strong> Пн–Нд 08:00–22:00</p>
+            <p>
+              <strong>Телефон:</strong>
+              <a href="tel:+380991112233">+38 (099) 111‑22‑33</a>
+            </p>
+            <p>
+              <strong>Email:</strong>
+              <a href="mailto:hello@aroma.cafe">hello@aroma.cafe</a>
+            </p>
+          </div>
+          <div class="map" aria-label="Місце на карті">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111549.99156185314!2d30.441343818342336!3d50.38840385640065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c9274c78ba3b%3A0x2a0428099d346c89!2z0LLRg9C70LjRhtGPINCf0YDQsNC60YLQuNGH0L3QsCwgMTAsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1758583666092!5m2!1suk!2sua"
+              allowfullscreen=""
+              loading="lazy"
+              class="map-cafe"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="footer">
+          <a href="tel:+380931112233" title="Подзвонити"
+            ><img src="../icons/phone.svg" alt="phone " class="phone"
+          /></a>
+          <div>
+            <a href="mailto:hello@coffee.example" title="Email">
+              <img src="../icons/email.svg" alt="email" class="email"
+            /></a>
+          </div>
+
+          <a
+            href="https://t.me/coffee_example"
+            target="_blank"
+            rel="noopener"
+            title="Telegram"
+            ><img src="../icons/telegram.svg" alt="telegram" class="icon"
+          /></a>
+          <a
+            href="https://wa.me/380931112233"
+            target="_blank"
+            rel="noopener"
+            title="WhatsApp"
+            ><img src="../icons/whatsapp.svg" alt="whatsapp" class="icon"
+          /></a>
+          <a href="viber://chat?number=%2B380931112233" title="Viber"
+            ><img src="../icons/viber.svg" alt="Viber" class="icon"
+          /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

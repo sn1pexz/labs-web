@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="реалізація кав'ярні" />
+    <meta name="keywords" content="Лабораторна робота, лаба, HTML, завдання" />
+    <meta name="author" content="student" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Реєстрація</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <script src="https://unpkg.com/imask"></script>
+
+  <body>
+    <div class="register">
+      <div class="card-register">
+        <div class="welcome">
+          <img src="../icons/logo.svg" alt="logo" class="logo" />
+          <h1>Ласкаво просимо</h1>
+        </div>
+        <p>Створіть обліковий запис, щоб насолодитися ароматною кавою ☕</p>
+
+        <form class="auth-form" method="post" enctype="multipart/form-data">
+          <div class="mb-3">
+            <label for="surname" class="form-label">Прізвище</label>
+            <input
+              type="text"
+              class="form-control"
+              id="surname"
+              name="surname"
+              required
+              maxlength="20"
+              minlength="3"
+            />
+            <div id="surnameError" style="color: red; font-size: 0.9rem"></div>
+          </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Ім'я</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              required
+              maxlength="20"
+              minlength="3"
+            />
+            <div id="nameError" style="color: red; font-size: 0.9rem"></div>
+          </div>
+          <div class="mb-3">
+            <label for="middleName" class="form-label">По-батькові</label>
+            <input
+              type="text"
+              class="form-control"
+              id="middleName"
+              name="middleName"
+              maxlength="20"
+              minlength="5"
+            />
+            <div
+              id="middleNameError"
+              style="color: red; font-size: 0.9rem"
+            ></div>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Телефон</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              name="phone"
+              placeholder="+38(0__) ___-__-__"
+              required
+            />
+            <div id="phoneError" style="color: red; font-size: 0.9rem"></div>
+          </div>
+          <div class="mb-3" id="emailDiv">
+            <label for="email" class="form-label">Електронна пошта</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            />
+            <div id="emailError" style="color: red; font-size: 0.9rem"></div>
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label">Пароль</label>
+            <input
+              type="password"
+              class="form-control"
+              id="password"
+              name="password"
+              required
+            />
+            <div id="passwordError" style="color: red; font-size: 0.9rem"></div>
+          </div>
+          <div class="mb-3">
+            <label for="birthDate" class="form-label">Дата народження</label>
+            <input
+              type="date"
+              class="form-control"
+              id="birthDate"
+              name="birthDate"
+              oninput="checkAge()"
+              required
+            />
+            <div id="dateError" style="color: red; font-size: 0.9rem"></div>
+          </div>
+          <div class="mb-3">
+            <label>Обрати стать:</label><br />
+            <input type="radio" id="male" name="gender" value="male" checked />
+            <label for="male">Чоловіча</label>
+
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Жіноча</label>
+
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Інша</label>
+          </div>
+
+          <div class="mb-3">
+            <label for="file" class="form-label">Оберіть зображення</label>
+            <input type="file" id="file" name="file" class="form-control" />
+          </div>
+
+          <button type="button" id="createbtn" class="btn btn-dark w-100 mt-2">
+            Створити
+          </button>
+          <div class="or text-center my-2">або</div>
+          <a href="../auth/auth.html" class="btn btn-light w-100">Увійти</a>
+        </form>
+
+        <a href="../index/index.html" class="back-link"
+          >Повернутись на головну</a
+        >
+      </div>
+    </div>
+
+    <br /><br />
+
+    <table id="usersTable">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Прізвище та ім'я</th>
+          <th>Телефон</th>
+          <th>Email</th>
+          <th>Вік</th>
+          <th>Стать</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+
+    <button type="button" id="delete" class="checked-row-btn">Видалити</button>
+    <button type="button" id="add" class="checked-row-btn">Дублювати</button>
+    <script src="register.js"></script>
+  </body>
+</html>
