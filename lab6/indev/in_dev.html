@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Демо властивостей</title>
+    <link rel="stylesheet" href="in_dev.css"/>
+
+</head>
+<body>
+    <section id="calc" class="card">
+        <h3>1) "Розрахунок прямокутника"</h3>
+        <div class="grid-2">
+            <div class="row">
+                <label for="len">Довжина</label>
+                <input id="len" type="number" step="any" placeholder="2" required>
+            </div>
+            <div class="row">
+                <label for="wid">Ширина</label>
+                <input id="wid" type="number" step="any" placeholder="3" required>
+            </div>
+            <div class="row">
+                <label>Периметр</label>
+                <div id="perimeter" class="out">—</div>
+            </div>
+            <div class="row">
+                <label>Площа</label>
+                <div id="area" class="out">—</div>
+            </div>
+            <div class="row">
+                <label>Довжина діагоналі</label>
+                <div id="diag" class="out">—</div>
+            </div>
+        </div>
+        <div id="rectError" class="error"></div>
+    </section>
+
+    <section id="chat" class="card">
+        <h3>2) Міні-чат</h3>
+        <div class="chat-wrap">
+            <div>
+                <div class="row">
+                    <input id="u1text" type="text" placeholder="Введіть текст (User 1)">
+                    <button id="u1send" class="btn">Надіслати</button>
+                </div>
+                
+            </div>
+            <div>
+                <div id="stream" class="chat-stream" aria-live="polite"></div>
+            </div>
+            <div>
+                <div class="row">
+                    <input id="u2text" type="text" placeholder="Введіть текст (User 2)">
+                     <button id="u2send" class="btn">Надіслати</button>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <section id="transliteration" class="card">
+        <h3>3) Транслітерація (Укр -> лат)</h3>
+        <div class="row" style="flex-direction:column;align-items:stretch">
+            <label for="ua">Український текст</label>
+            <textarea id="ua" placeholder="Смачна кава з Києва. Єнот і я, Юля, їду в Харків, Щастя!"></textarea>
+        </div>
+        <div class="row" style="flex-direction:column;align-items:stretch">
+            <label for="la">Результат</label>
+            <textarea id="la" readonly></textarea>
+        </div>
+    </section>
+    </section>
+
+    <script src="in_dev.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+body {
+  background-color: #f6f5f4;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  color: black;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 30px;
+  background-color: white;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 25px;
+}
+
+.logo {
+  width: 35px;
+  left: -120px;
+  opacity: 0;
+  animation: slideIn 3s forwards;
+  position: absolute;
+}
+
+.faq-section {
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f6f5f4;
+}
+
+.faq-section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #b45309;
+}
+.arrow {
+  width: 50px;
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-item {
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  padding: 20px 25px;
+  border-left: 5px solid #f59e0b;
+}
+
+.faq-item h3 {
+  margin-top: 0;
+  color: #b45309;
+  font-size: 1.2rem;
+}
+
+.faq-item p {
+  margin-bottom: 0;
+  color: #6b7280;
+  font-size: 1rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.icon,
+.phone,
+.email {
+  width: 22px;
+}
+
+@media screen and (max-width: 600px) {
+  .faq-item {
+    padding: 15px;
+  }
+
+  .faq-item h3 {
+    font-size: 1rem;
+  }
+
+  .faq-item p {
+    font-size: 0.9rem;
+  }
+}
+@keyframes slideIn {
+  0% {
+    left: -120px;
+    opacity: 0;
+  }
+  100% {
+    left: 18px;
+    opacity: 1;
+  }
+}
