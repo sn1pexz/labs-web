@@ -10,4 +10,5 @@ Each lab is organized in a separate folder with code examples and additional mat
 - `lab2` – CSS fundamentals
 - `lab3` - getting deeper with HTML and CSS Pt.1
 - `lab4` - getting deeper with HTML and CSS Pt.2 (merged to lab3 folder)
-- `lab5` – CSS fundamentals
+- `lab5` – JS fundamentals
+- `lab6` - getting deeper with JS
