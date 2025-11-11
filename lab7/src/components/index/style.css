@@ -1,0 +1,237 @@
+body {
+  background-color: #f6f5f4;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.card-img-top {
+  width: 100%;
+  aspect-ratio: 4 / 3; /*стабільна пропорція*/
+  object-fit: cover; /*обрізати зайве, без спотворень*/
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.about .photo {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+.section {
+  gap: 10px;
+}
+
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+.card .card-body .btn {
+  margin-top: auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 30px;
+  background-color: white;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 25px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+nav > a {
+  color: black;
+}
+a:hover {
+  color: rgb(99, 96, 96);
+}
+a {
+  text-decoration: none;
+}
+.faq {
+  font-size: 1.3rem;
+}
+#slider .carousel-inner {
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+#slider .carousel-item {
+  height: 200px;
+}
+
+#slider .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+section {
+  margin: 20px;
+}
+.photo img {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5%;
+}
+.about .photo {
+  border: none;
+}
+.icon {
+  width: 25px;
+}
+.phone {
+  width: 20px;
+}
+.email {
+  width: 20px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.logo {
+  width: 35px;
+  left: -120px;
+  opacity: 0;
+  animation: slideIn 3s forwards;
+  position: absolute;
+}
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 50%;
+  text-align: center;
+  background-color: white;
+  border-radius: 1%;
+  box-shadow: 5px 5px 5px rgb(226, 226, 226);
+}
+.hero-card > p {
+  color: gray;
+}
+.secondary {
+  background-color: black;
+  color: white;
+}
+.btn {
+  border: solid 1px rgb(234, 234, 234);
+  padding: 10px;
+}
+.general-btn {
+  margin: 10px;
+  gap: 5px;
+  display: flex;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+.card {
+  padding: 10px;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+  gap: 50px;
+}
+.map-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts {
+  padding: 30px;
+}
+.about-cafe {
+  max-width: 700px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map {
+  width: 600px;
+  height: 250px;
+}
+.map-cafe {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 850px) {
+  .hero-card {
+    font-size: small;
+    min-width: 300px;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+  }
+  .map-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .map {
+    max-width: 250px;
+  }
+  nav > a {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  nav {
+    gap: 5px;
+  }
+  .brand {
+    font-size: 12px;
+  }
+}
+@keyframes slideIn {
+  0% {
+    left: -120px;
+    opacity: 0;
+  }
+  100% {
+    left: 18px;
+    opacity: 1;
+  }
+}
